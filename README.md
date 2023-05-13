@@ -27,5 +27,16 @@ func TestMain(m *testing.M) {
 }
 ```
 
+shorthand
+```go
+package nopieprofile_test
+
+import (
+	"github.com/orisano/nopieprofile/nopieprofiletest"
+)
+
+func TestMain(m *testing.M) { nopieprofiletest.Main(m) }
+```
+
 ## License
 MIT
