@@ -32,6 +32,8 @@ shorthand
 package nopieprofile_test
 
 import (
+	"testing"
+
 	"github.com/orisano/nopieprofile/nopieprofiletest"
 )
 
