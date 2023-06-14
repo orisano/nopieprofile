@@ -73,10 +73,10 @@ func Rewrite(profilePath string) error {
 func RewriteTestProfile() error {
 	dir := flag.Lookup("test.outputdir").Value.String()
 	cpuprofile := flag.Lookup("test.cpuprofile").Value.String()
-	profilePath := filepath.Join(dir, cpuprofile)
-	if profilePath == "" {
+	if cpuprofile == "" {
 		return nil
 	}
+	profilePath := filepath.Join(dir, cpuprofile)
 	if err := Rewrite(profilePath); err != nil {
 		return fmt.Errorf("rewrite profile: %w", err)
 	}
